@@ -1,3 +1,4 @@
+import '/components/logo/logo_widget.dart';
 import '/components/modals/taxes_modal/taxes_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/components/profile_setting_detail_items/profile_setting_detail_items_widget.dart';
@@ -85,9 +86,16 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
+                                            wrapWithModel(
+                                              model: _model.logoModel,
+                                              updateCallback: () =>
+                                                  safeSetState(() {}),
+                                              child: LogoWidget(),
+                                            ),
                                             Expanded(
                                               child: Text(
                                                 'Profile',
+                                                textAlign: TextAlign.end,
                                                 maxLines: 1,
                                                 style:
                                                     FlutterFlowTheme.of(context)

@@ -1,3 +1,4 @@
+import '/components/logo/logo_widget.dart';
 import '/components/modals/no_trip_booked_modal/no_trip_booked_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/flutter_flow/flutter_flow_media_display.dart';
@@ -15,6 +16,8 @@ import 'package:provider/provider.dart';
 class TripsLogedModel extends FlutterFlowModel<TripsLogedWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // Model for LOGO component.
+  late LogoModel logoModel;
   // State field(s) for RatingBar widget.
   double? ratingBarValue;
   // Model for NoTripBookedModal component.
@@ -24,6 +27,7 @@ class TripsLogedModel extends FlutterFlowModel<TripsLogedWidget> {
 
   @override
   void initState(BuildContext context) {
+    logoModel = createModel(context, () => LogoModel());
     noTripBookedModalModel =
         createModel(context, () => NoTripBookedModalModel());
     navBarModel = createModel(context, () => NavBarModel());
@@ -31,6 +35,7 @@ class TripsLogedModel extends FlutterFlowModel<TripsLogedWidget> {
 
   @override
   void dispose() {
+    logoModel.dispose();
     noTripBookedModalModel.dispose();
     navBarModel.dispose();
   }

@@ -1,3 +1,4 @@
+import '/components/logo/logo_widget.dart';
 import '/components/modals/taxes_modal/taxes_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/components/profile_setting_detail_items/profile_setting_detail_items_widget.dart';
@@ -14,6 +15,8 @@ import 'package:provider/provider.dart';
 class ProfileModel extends FlutterFlowModel<ProfileWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // Model for LOGO component.
+  late LogoModel logoModel;
   // Model for ProfileSettingItems component.
   late ProfileSettingItemsModel profileSettingItemsModel1;
   // Model for ProfileSettingItems component.
@@ -57,6 +60,7 @@ class ProfileModel extends FlutterFlowModel<ProfileWidget> {
 
   @override
   void initState(BuildContext context) {
+    logoModel = createModel(context, () => LogoModel());
     profileSettingItemsModel1 =
         createModel(context, () => ProfileSettingItemsModel());
     profileSettingItemsModel2 =
@@ -100,6 +104,7 @@ class ProfileModel extends FlutterFlowModel<ProfileWidget> {
 
   @override
   void dispose() {
+    logoModel.dispose();
     profileSettingItemsModel1.dispose();
     profileSettingItemsModel2.dispose();
     profileSettingItemsModel3.dispose();

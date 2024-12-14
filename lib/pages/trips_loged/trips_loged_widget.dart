@@ -1,3 +1,4 @@
+import '/components/logo/logo_widget.dart';
 import '/components/modals/no_trip_booked_modal/no_trip_booked_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/flutter_flow/flutter_flow_media_display.dart';
@@ -92,15 +93,12 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                   MainAxisAlignment
                                                       .spaceBetween,
                                               children: [
-                                                ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
-                                                  child: Image.network(
-                                                    'https://picsum.photos/seed/726/600',
-                                                    width: 127.0,
-                                                    height: 35.0,
-                                                    fit: BoxFit.cover,
+                                                Expanded(
+                                                  child: wrapWithModel(
+                                                    model: _model.logoModel,
+                                                    updateCallback: () =>
+                                                        safeSetState(() {}),
+                                                    child: LogoWidget(),
                                                   ),
                                                 ),
                                                 Expanded(
