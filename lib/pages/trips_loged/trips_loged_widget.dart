@@ -1,7 +1,9 @@
 import '/components/modals/no_trip_booked_modal/no_trip_booked_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
+import '/flutter_flow/flutter_flow_media_display.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'trips_loged_model.dart';
@@ -172,9 +174,20 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                             )
                                                           ],
                                                           borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      12.0),
+                                                              const BorderRadius.only(
+                                                            bottomLeft:
+                                                                Radius.circular(
+                                                                    12.0),
+                                                            bottomRight:
+                                                                Radius.circular(
+                                                                    12.0),
+                                                            topLeft:
+                                                                Radius.circular(
+                                                                    12.0),
+                                                            topRight:
+                                                                Radius.circular(
+                                                                    12.0),
+                                                          ),
                                                         ),
                                                         child: Padding(
                                                           padding:
@@ -189,6 +202,47 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                 MainAxisSize
                                                                     .max,
                                                             children: [
+                                                              FlutterFlowMediaDisplay(
+                                                                path:
+                                                                    valueOrDefault<
+                                                                        String>(
+                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/apartment-rental-free-pages-similarto-airbnb-q7ihe5/assets/8gnqppgh9ek9/resort.mp4',
+                                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/apartment-rental-free-pages-similarto-airbnb-q7ihe5/assets/8gnqppgh9ek9/resort.mp4',
+                                                                ),
+                                                                imageBuilder:
+                                                                    (path) =>
+                                                                        ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .network(
+                                                                    path,
+                                                                    width: double
+                                                                        .infinity,
+                                                                    height: double
+                                                                        .infinity,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                                videoPlayerBuilder:
+                                                                    (path) =>
+                                                                        FlutterFlowVideoPlayer(
+                                                                  path: path,
+                                                                  width: 340.0,
+                                                                  autoPlay:
+                                                                      true,
+                                                                  looping: true,
+                                                                  showControls:
+                                                                      false,
+                                                                  allowFullScreen:
+                                                                      false,
+                                                                  allowPlaybackSpeedMenu:
+                                                                      false,
+                                                                ),
+                                                              ),
                                                               ClipRRect(
                                                                 borderRadius:
                                                                     const BorderRadius
@@ -210,7 +264,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                     Container(
                                                                   width: double
                                                                       .infinity,
-                                                                  height: 110.0,
+                                                                  height: 0.0,
                                                                   decoration:
                                                                       BoxDecoration(
                                                                     color: FlutterFlowTheme.of(
@@ -232,77 +286,6 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                           Radius.circular(
                                                                               12.0),
                                                                     ),
-                                                                  ),
-                                                                  child: Stack(
-                                                                    children: [
-                                                                      Align(
-                                                                        alignment: const AlignmentDirectional(
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            ClipRRect(
-                                                                          borderRadius:
-                                                                              const BorderRadius.only(
-                                                                            bottomLeft:
-                                                                                Radius.circular(0.0),
-                                                                            bottomRight:
-                                                                                Radius.circular(0.0),
-                                                                            topLeft:
-                                                                                Radius.circular(12.0),
-                                                                            topRight:
-                                                                                Radius.circular(12.0),
-                                                                          ),
-                                                                          child:
-                                                                              Image.network(
-                                                                            'https://cf.bstatic.com/xdata/images/hotel/max1024x768/540160365.jpg?k=626baec0e08d6e5344c28a0cb970bafc9ff5205384b48a954f76db1d6fc67735&o=&hp=1',
-                                                                            width:
-                                                                                double.infinity,
-                                                                            fit:
-                                                                                BoxFit.cover,
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                      Align(
-                                                                        alignment: const AlignmentDirectional(
-                                                                            -1.0,
-                                                                            -1.0),
-                                                                        child:
-                                                                            Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              10.0,
-                                                                              10.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Container(
-                                                                            width:
-                                                                                70.0,
-                                                                            decoration:
-                                                                                BoxDecoration(
-                                                                              color: FlutterFlowTheme.of(context).secondaryBackground,
-                                                                              borderRadius: BorderRadius.circular(4.0),
-                                                                            ),
-                                                                            child:
-                                                                                Padding(
-                                                                              padding: const EdgeInsets.all(4.0),
-                                                                              child: Row(
-                                                                                mainAxisSize: MainAxisSize.max,
-                                                                                children: [
-                                                                                  Text(
-                                                                                    'In 2 weeks',
-                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                          fontFamily: 'SFPRO',
-                                                                                          letterSpacing: 0.0,
-                                                                                          useGoogleFonts: false,
-                                                                                        ),
-                                                                                  ),
-                                                                                ],
-                                                                              ),
-                                                                            ),
-                                                                          ),
-                                                                        ),
-                                                                      ),
-                                                                    ],
                                                                   ),
                                                                 ),
                                                               ),
