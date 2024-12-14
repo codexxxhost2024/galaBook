@@ -5,6 +5,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'guests_modal_model.dart';
 export 'guests_modal_model.dart';
 
@@ -43,7 +45,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const Spacer(),
+        Spacer(),
         Expanded(
           flex: 3,
           child: Row(
@@ -52,7 +54,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
             children: [
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
@@ -105,7 +107,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                         ),
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 0.0, 0.0),
                             child: SingleChildScrollView(
                               child: Column(
@@ -161,7 +163,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                                 ),
                                               ],
                                             ),
-                                          ].divide(const SizedBox(height: 4.0)),
+                                          ].divide(SizedBox(height: 4.0)),
                                         ),
                                       ),
                                       Container(
@@ -226,7 +228,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                   wrapWithModel(
                                     model: _model.guestsItemModel1,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: const GuestsItemWidget(
+                                    child: GuestsItemWidget(
                                       title: 'Children',
                                       description: 'Age 2-12',
                                     ),
@@ -234,7 +236,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                   wrapWithModel(
                                     model: _model.guestsItemModel2,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: const GuestsItemWidget(
+                                    child: GuestsItemWidget(
                                       title: 'Infants',
                                       description: 'Under 2',
                                     ),
@@ -242,12 +244,12 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                   wrapWithModel(
                                     model: _model.guestsItemModel3,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: const GuestsItemWidget(
+                                    child: GuestsItemWidget(
                                       title: 'Pets',
                                       description: 'Bringing a service animal?',
                                     ),
                                   ),
-                                ].divide(const SizedBox(height: 8.0)),
+                                ].divide(SizedBox(height: 8.0)),
                               ),
                             ),
                           ),
@@ -257,7 +259,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                           color: FlutterFlowTheme.of(context).neutral06,
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(16.0),
+                          padding: EdgeInsets.all(16.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -285,9 +287,9 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                 text: 'Save',
                                 options: FFButtonOptions(
                                   height: 40.0,
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
-                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 0.0),
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
@@ -299,7 +301,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
                                         letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
-                                  borderSide: const BorderSide(
+                                  borderSide: BorderSide(
                                     color: Colors.transparent,
                                   ),
                                   borderRadius: BorderRadius.circular(8.0),
@@ -316,7 +318,7 @@ class _GuestsModalWidgetState extends State<GuestsModalWidget> {
             ],
           ),
         ),
-        const Spacer(flex: 2),
+        Spacer(flex: 2),
       ],
     );
   }

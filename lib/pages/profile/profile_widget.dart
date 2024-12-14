@@ -5,7 +5,10 @@ import '/components/profile_setting_items/profile_setting_items_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'profile_model.dart';
 export 'profile_model.dart';
 
@@ -56,7 +59,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Expanded(
-                  child: SizedBox(
+                  child: Container(
                     width: double.infinity,
                     height: double.infinity,
                     child: Stack(
@@ -72,7 +75,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Container(
                                         decoration: BoxDecoration(
@@ -101,7 +104,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Container(
                                         decoration: BoxDecoration(
@@ -126,7 +129,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                     height: 50.0,
                                                     clipBehavior:
                                                         Clip.antiAlias,
-                                                    decoration: const BoxDecoration(
+                                                    decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
                                                     ),
                                                     child: Image.network(
@@ -137,7 +140,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -195,7 +198,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                               ),
                                                             ],
                                                           ),
-                                                        ].divide(const SizedBox(
+                                                        ].divide(SizedBox(
                                                             height: 8.0)),
                                                       ),
                                                     ),
@@ -223,13 +226,13 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Container(
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: const [
+                                          boxShadow: [
                                             BoxShadow(
                                               blurRadius: 20.0,
                                               color: Color(0x33000000),
@@ -248,7 +251,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                           ),
                                         ),
                                         child: Padding(
-                                          padding: const EdgeInsets.all(24.0),
+                                          padding: EdgeInsets.all(24.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -314,7 +317,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                       ],
                                                     ),
                                                   ].divide(
-                                                      const SizedBox(height: 12.0)),
+                                                      SizedBox(height: 12.0)),
                                                 ),
                                               ),
                                               ClipRRect(
@@ -333,7 +336,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -362,7 +365,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel1,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kuserCircle,
                                               ),
@@ -375,7 +378,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel2,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kcash,
                                               ),
@@ -408,7 +411,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                       padding: MediaQuery
                                                           .viewInsetsOf(
                                                               context),
-                                                      child: const TaxesModalWidget(),
+                                                      child: TaxesModalWidget(),
                                                     ),
                                                   );
                                                 },
@@ -420,7 +423,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                   .profileSettingItemsModel3,
                                               updateCallback: () =>
                                                   safeSetState(() {}),
-                                              child: const ProfileSettingItemsWidget(
+                                              child: ProfileSettingItemsWidget(
                                                 icon: Icon(
                                                   FFIcons.kfile,
                                                 ),
@@ -433,7 +436,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel4,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kshield,
                                               ),
@@ -446,7 +449,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel5,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 Icons.translate,
                                               ),
@@ -459,7 +462,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel6,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kbell,
                                               ),
@@ -472,7 +475,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel7,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.klock,
                                               ),
@@ -480,11 +483,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               activeDivider: false,
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -513,7 +516,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel8,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.khomePlus,
                                               ),
@@ -526,7 +529,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel9,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kship,
                                               ),
@@ -539,7 +542,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel10,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kcash,
                                               ),
@@ -547,11 +550,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               activeDivider: false,
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -581,7 +584,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             updateCallback: () =>
                                                 safeSetState(() {}),
                                             child:
-                                                const ProfileSettingDetailItemsWidget(
+                                                ProfileSettingDetailItemsWidget(
                                               icon: Icon(
                                                 FFIcons.khomeStats,
                                               ),
@@ -590,11 +593,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                   'Earn \$15 for every new host your refer',
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -623,7 +626,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel11,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 Icons
                                                     .record_voice_over_outlined,
@@ -632,11 +635,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               activeDivider: false,
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -665,7 +668,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel12,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 Icons.map_outlined,
                                               ),
@@ -680,7 +683,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             updateCallback: () =>
                                                 safeSetState(() {}),
                                             child:
-                                                const ProfileSettingDetailItemsWidget(
+                                                ProfileSettingDetailItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kshieldQuestion,
                                               ),
@@ -695,7 +698,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             updateCallback: () =>
                                                 safeSetState(() {}),
                                             child:
-                                                const ProfileSettingDetailItemsWidget(
+                                                ProfileSettingDetailItemsWidget(
                                               icon: Icon(
                                                 Icons.support_agent_rounded,
                                               ),
@@ -710,7 +713,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel13,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.khelp,
                                               ),
@@ -723,7 +726,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel14,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 Icons.edit_outlined,
                                               ),
@@ -731,11 +734,11 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               activeDivider: true,
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -764,7 +767,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel15,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kbook,
                                               ),
@@ -776,7 +779,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 .profileSettingItemsModel16,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ProfileSettingItemsWidget(
+                                            child: ProfileSettingItemsWidget(
                                               icon: Icon(
                                                 FFIcons.kbook,
                                               ),
@@ -784,7 +787,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               activeDivider: true,
                                             ),
                                           ),
-                                        ].divide(const SizedBox(height: 8.0)),
+                                        ].divide(SizedBox(height: 8.0)),
                                       ),
                                     ),
                                     Container(
@@ -793,7 +796,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             .secondaryBackground,
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             24.0, 8.0, 24.0, 8.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -805,7 +808,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                         .secondaryBackground,
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 8.0, 8.0, 8.0),
                                                 child: Text(
@@ -833,7 +836,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 24.0, 24.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -855,20 +858,20 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(const SizedBox(height: 40.0))
-                                      .addToStart(const SizedBox(height: 50.0)),
+                                      .divide(SizedBox(height: 40.0))
+                                      .addToStart(SizedBox(height: 50.0)),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         Align(
-                          alignment: const AlignmentDirectional(0.0, 1.0),
+                          alignment: AlignmentDirectional(0.0, 1.0),
                           child: wrapWithModel(
                             model: _model.navBarModel,
                             updateCallback: () => safeSetState(() {}),
                             updateOnChange: true,
-                            child: const NavBarWidget(
+                            child: NavBarWidget(
                               activePageName: 'Profile',
                             ),
                           ),

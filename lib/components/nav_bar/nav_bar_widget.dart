@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'nav_bar_model.dart';
 export 'nav_bar_model.dart';
 
@@ -8,7 +10,7 @@ class NavBarWidget extends StatefulWidget {
   const NavBarWidget({
     super.key,
     String? activePageName,
-  }) : activePageName = activePageName ?? 'Explore';
+  }) : this.activePageName = activePageName ?? 'Explore';
 
   final String activePageName;
 
@@ -62,7 +64,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
             color: FlutterFlowTheme.of(context).secondaryBackground,
           ),
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -73,7 +75,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      if (widget.activePageName != 'Explore') {
+                      if (widget!.activePageName != 'Explore') {
                         context.goNamed('Explore');
                       }
                     },
@@ -88,7 +90,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                           Icon(
                             FFIcons.ksearch,
                             color: valueOrDefault<Color>(
-                              widget.activePageName == 'Explore'
+                              widget!.activePageName == 'Explore'
                                   ? FlutterFlowTheme.of(context).accent2
                                   : FlutterFlowTheme.of(context).neutral07,
                               FlutterFlowTheme.of(context).neutral07,
@@ -102,7 +104,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'SFPRO',
                                   color: valueOrDefault<Color>(
-                                    widget.activePageName == 'Explore'
+                                    widget!.activePageName == 'Explore'
                                         ? FlutterFlowTheme.of(context).accent2
                                         : FlutterFlowTheme.of(context)
                                             .neutral07,
@@ -113,7 +115,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   useGoogleFonts: false,
                                 ),
                           ),
-                        ].divide(const SizedBox(height: 5.0)),
+                        ].divide(SizedBox(height: 5.0)),
                       ),
                     ),
                   ),
@@ -131,7 +133,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                           Icon(
                             FFIcons.kcomet,
                             color: valueOrDefault<Color>(
-                              widget.activePageName == 'Wishlist'
+                              widget!.activePageName == 'Wishlist'
                                   ? FlutterFlowTheme.of(context).accent2
                                   : FlutterFlowTheme.of(context).neutral07,
                               FlutterFlowTheme.of(context).neutral07,
@@ -145,7 +147,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'SFPRO',
                                   color: valueOrDefault<Color>(
-                                    widget.activePageName == 'Wishlist'
+                                    widget!.activePageName == 'Wishlist'
                                         ? FlutterFlowTheme.of(context).accent2
                                         : FlutterFlowTheme.of(context)
                                             .neutral07,
@@ -156,7 +158,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   useGoogleFonts: false,
                                 ),
                           ),
-                        ].divide(const SizedBox(height: 5.0)),
+                        ].divide(SizedBox(height: 5.0)),
                       ),
                     ),
                   ),
@@ -167,7 +169,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      if (widget.activePageName != 'TripsLoged') {
+                      if (widget!.activePageName != 'TripsLoged') {
                         context.goNamed('TripsLoged');
                       }
                     },
@@ -182,7 +184,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                           Icon(
                             Icons.map_outlined,
                             color: valueOrDefault<Color>(
-                              widget.activePageName == 'Trips'
+                              widget!.activePageName == 'Trips'
                                   ? FlutterFlowTheme.of(context).accent2
                                   : FlutterFlowTheme.of(context).neutral07,
                               FlutterFlowTheme.of(context).neutral07,
@@ -196,7 +198,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'SFPRO',
                                   color: valueOrDefault<Color>(
-                                    widget.activePageName == 'Trips'
+                                    widget!.activePageName == 'Trips'
                                         ? FlutterFlowTheme.of(context).accent2
                                         : FlutterFlowTheme.of(context)
                                             .neutral07,
@@ -207,7 +209,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   useGoogleFonts: false,
                                 ),
                           ),
-                        ].divide(const SizedBox(height: 5.0)),
+                        ].divide(SizedBox(height: 5.0)),
                       ),
                     ),
                   ),
@@ -225,7 +227,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                           Icon(
                             FFIcons.kmessage2,
                             color: valueOrDefault<Color>(
-                              widget.activePageName == 'Inbox'
+                              widget!.activePageName == 'Inbox'
                                   ? FlutterFlowTheme.of(context).accent2
                                   : FlutterFlowTheme.of(context).neutral07,
                               FlutterFlowTheme.of(context).neutral07,
@@ -239,7 +241,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'SFPRO',
                                   color: valueOrDefault<Color>(
-                                    widget.activePageName == 'Inbox'
+                                    widget!.activePageName == 'Inbox'
                                         ? FlutterFlowTheme.of(context).accent2
                                         : FlutterFlowTheme.of(context)
                                             .neutral07,
@@ -250,7 +252,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   useGoogleFonts: false,
                                 ),
                           ),
-                        ].divide(const SizedBox(height: 5.0)),
+                        ].divide(SizedBox(height: 5.0)),
                       ),
                     ),
                   ),
@@ -261,7 +263,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      if (widget.activePageName != 'Profile') {
+                      if (widget!.activePageName != 'Profile') {
                         context.goNamed('Profile');
                       }
                     },
@@ -276,7 +278,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                           Icon(
                             FFIcons.kuserCircle,
                             color: valueOrDefault<Color>(
-                              widget.activePageName == 'Profile'
+                              widget!.activePageName == 'Profile'
                                   ? FlutterFlowTheme.of(context).accent2
                                   : FlutterFlowTheme.of(context).neutral07,
                               FlutterFlowTheme.of(context).neutral07,
@@ -290,7 +292,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                 .override(
                                   fontFamily: 'SFPRO',
                                   color: valueOrDefault<Color>(
-                                    widget.activePageName == 'Profile'
+                                    widget!.activePageName == 'Profile'
                                         ? FlutterFlowTheme.of(context).accent2
                                         : FlutterFlowTheme.of(context)
                                             .neutral07,
@@ -301,7 +303,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                                   useGoogleFonts: false,
                                 ),
                           ),
-                        ].divide(const SizedBox(height: 5.0)),
+                        ].divide(SizedBox(height: 5.0)),
                       ),
                     ),
                   ),

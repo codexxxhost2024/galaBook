@@ -2,7 +2,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'taxes_modal_model.dart';
 export 'taxes_modal_model.dart';
 
@@ -44,17 +47,17 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: double.infinity,
       height: double.infinity,
       child: Stack(
         children: [
           Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
             child: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -66,14 +69,14 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               20.0, 0.0, 20.0, 0.0),
                           child: Container(
                             width: 150.0,
                             height: 20.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context).neutral08,
-                              borderRadius: const BorderRadius.only(
+                              borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(0.0),
                                 topLeft: Radius.circular(14.0),
@@ -89,7 +92,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                     child: Container(
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(20.0),
@@ -103,7 +106,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: const BorderRadius.only(
+                              borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(0.0),
                                 topLeft: Radius.circular(20.0),
@@ -111,7 +114,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 24.0, 24.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -150,7 +153,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 10.0, 24.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -170,7 +173,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 0.0, 16.0, 0.0),
                                             child: Icon(
                                               FFIcons.kchevronRight,
@@ -197,7 +200,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(height: 8.0)),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
                                 Expanded(
                                   child: SingleChildScrollView(
@@ -207,7 +210,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
@@ -230,7 +233,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           child: Container(
                                             width: double.infinity,
@@ -243,7 +246,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                             child: Column(
                                               children: [
                                                 Align(
-                                                  alignment: const Alignment(-1.0, 0),
+                                                  alignment: Alignment(-1.0, 0),
                                                   child: TabBar(
                                                     isScrollable: true,
                                                     labelColor:
@@ -255,7 +258,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                 context)
                                                             .secondaryText,
                                                     labelPadding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 20.0, 0.0),
                                                     labelStyle: FlutterFlowTheme
@@ -267,14 +270,14 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                           useGoogleFonts: false,
                                                         ),
                                                     unselectedLabelStyle:
-                                                        const TextStyle(),
+                                                        TextStyle(),
                                                     indicatorColor:
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .primaryText,
                                                     padding:
-                                                        const EdgeInsets.all(4.0),
-                                                    tabs: const [
+                                                        EdgeInsets.all(4.0),
+                                                    tabs: [
                                                       Tab(
                                                         text: 'Taxpayers',
                                                       ),
@@ -382,7 +385,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                             ),
                                                                           ],
                                                                         ),
-                                                                      ].divide(const SizedBox(
+                                                                      ].divide(SizedBox(
                                                                               height: 4.0)),
                                                                     ),
                                                                     FFButtonWidget(
@@ -397,12 +400,12 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                           FFButtonOptions(
                                                                         height:
                                                                             40.0,
-                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: EdgeInsetsDirectional.fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
-                                                                        iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -418,7 +421,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                               useGoogleFonts: false,
                                                                             ),
                                                                         borderSide:
-                                                                            const BorderSide(
+                                                                            BorderSide(
                                                                           color:
                                                                               Colors.transparent,
                                                                         ),
@@ -426,7 +429,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                     ),
-                                                                  ].divide(const SizedBox(
+                                                                  ].divide(SizedBox(
                                                                       height:
                                                                           16.0)),
                                                                 ),
@@ -512,7 +515,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                           ),
                                                                         ],
                                                                       ),
-                                                                    ].divide(const SizedBox(
+                                                                    ].divide(SizedBox(
                                                                         height:
                                                                             4.0)),
                                                                   ),
@@ -528,12 +531,12 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                         FFButtonOptions(
                                                                       height:
                                                                           40.0,
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -555,7 +558,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                                 false,
                                                                           ),
                                                                       borderSide:
-                                                                          const BorderSide(
+                                                                          BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                       ),
@@ -564,7 +567,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                               8.0),
                                                                     ),
                                                                   ),
-                                                                ].divide(const SizedBox(
+                                                                ].divide(SizedBox(
                                                                     height:
                                                                         16.0)),
                                                               ),
@@ -639,15 +642,15 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                     ),
                                                                   ],
                                                                 ),
-                                                              ].divide(const SizedBox(
+                                                              ].divide(SizedBox(
                                                                   height:
                                                                       16.0)),
                                                             ),
                                                           ]
-                                                              .divide(const SizedBox(
+                                                              .divide(SizedBox(
                                                                   height: 24.0))
                                                               .addToStart(
-                                                                  const SizedBox(
+                                                                  SizedBox(
                                                                       height:
                                                                           24.0)),
                                                         ),
@@ -728,7 +731,7 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                           ),
                                                                         ],
                                                                       ),
-                                                                    ].divide(const SizedBox(
+                                                                    ].divide(SizedBox(
                                                                         height:
                                                                             4.0)),
                                                                   ),
@@ -794,9 +797,9 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                                 ),
                                                                               ],
                                                                             ),
-                                                                          ].divide(const SizedBox(height: 4.0)),
+                                                                          ].divide(SizedBox(height: 4.0)),
                                                                         ),
-                                                                      ].divide(const SizedBox(
+                                                                      ].divide(SizedBox(
                                                                               height: 16.0)),
                                                                     ),
                                                                   ),
@@ -862,9 +865,9 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                                 ),
                                                                               ],
                                                                             ),
-                                                                          ].divide(const SizedBox(height: 4.0)),
+                                                                          ].divide(SizedBox(height: 4.0)),
                                                                         ),
-                                                                      ].divide(const SizedBox(
+                                                                      ].divide(SizedBox(
                                                                               height: 16.0)),
                                                                     ),
                                                                   ),
@@ -976,16 +979,16 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                                                           ),
                                                                         ],
                                                                       ),
-                                                                    ].divide(const SizedBox(
+                                                                    ].divide(SizedBox(
                                                                         height:
                                                                             16.0)),
                                                                   ),
                                                                 ]
-                                                                    .divide(const SizedBox(
+                                                                    .divide(SizedBox(
                                                                         height:
                                                                             24.0))
                                                                     .addToStart(
-                                                                        const SizedBox(
+                                                                        SizedBox(
                                                                             height:
                                                                                 24.0)),
                                                               ),
@@ -1000,13 +1003,13 @@ class _TaxesModalWidgetState extends State<TaxesModalWidget>
                                             ),
                                           ),
                                         ),
-                                      ].divide(const SizedBox(height: 8.0)),
+                                      ].divide(SizedBox(height: 8.0)),
                                     ),
                                   ),
                                 ),
                               ]
-                                  .divide(const SizedBox(height: 16.0))
-                                  .addToStart(const SizedBox(height: 24.0)),
+                                  .divide(SizedBox(height: 16.0))
+                                  .addToStart(SizedBox(height: 24.0)),
                             ),
                           ),
                         ],

@@ -6,7 +6,9 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:provider/provider.dart';
 import 'review_five_model.dart';
 export 'review_five_model.dart';
 
@@ -45,7 +47,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-        body: SizedBox(
+        body: Container(
           width: double.infinity,
           height: double.infinity,
           child: Stack(
@@ -66,7 +68,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 24.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -111,7 +113,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -126,7 +128,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -233,14 +235,14 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                             .neutral06,
                                       ),
                                     ]
-                                        .divide(const SizedBox(height: 16.0))
-                                        .addToStart(const SizedBox(height: 16.0)),
+                                        .divide(SizedBox(height: 16.0))
+                                        .addToStart(SizedBox(height: 16.0)),
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -264,7 +266,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                     ],
                                   ),
                                   FlutterFlowChoiceChips(
-                                    options: const [
+                                    options: [
                                       ChipData('Looked like the photos'),
                                       ChipData('Matched the description'),
                                       ChipData(
@@ -288,7 +290,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                           .primaryText,
                                       iconSize: 18.0,
                                       labelPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               18.0, 4.0, 18.0, 4.0),
                                       elevation: 0.0,
                                       borderColor: FlutterFlowTheme.of(context)
@@ -314,7 +316,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                           .secondaryText,
                                       iconSize: 18.0,
                                       labelPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
+                                          EdgeInsetsDirectional.fromSTEB(
                                               18.0, 4.0, 18.0, 4.0),
                                       elevation: 0.0,
                                       borderColor: FlutterFlowTheme.of(context)
@@ -336,12 +338,12 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                     ),
                                     wrapped: true,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                           ]
-                              .divide(const SizedBox(height: 16.0))
-                              .addToStart(const SizedBox(height: 30.0)),
+                              .divide(SizedBox(height: 16.0))
+                              .addToStart(SizedBox(height: 30.0)),
                         ),
                       ),
                     ),
@@ -368,7 +370,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(24.0),
+                        padding: EdgeInsets.all(24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.end,
@@ -382,9 +384,9 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                               text: 'Next',
                               options: FFButtonOptions(
                                 height: 40.0,
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: _model.ratingBarValue! <= 0.0
                                     ? FlutterFlowTheme.of(context).neutral06
@@ -398,7 +400,7 @@ class _ReviewFiveWidgetState extends State<ReviewFiveWidget> {
                                       useGoogleFonts: false,
                                     ),
                                 elevation: 0.0,
-                                borderSide: const BorderSide(
+                                borderSide: BorderSide(
                                   color: Colors.transparent,
                                 ),
                                 borderRadius: BorderRadius.circular(8.0),

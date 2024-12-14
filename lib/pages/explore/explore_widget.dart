@@ -5,8 +5,11 @@ import '/components/modals/stay_modal/stay_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'explore_model.dart';
 export 'explore_model.dart';
 
@@ -54,7 +57,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: SafeArea(
           top: true,
-          child: SizedBox(
+          child: Container(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -69,14 +72,14 @@ class _ExploreWidgetState extends State<ExploreWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 14.0, 24.0, 8.0),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: const [
+                            boxShadow: [
                               BoxShadow(
                                 blurRadius: 10.0,
                                 color: Color(0x33000000),
@@ -89,13 +92,13 @@ class _ExploreWidgetState extends State<ExploreWidget>
                             borderRadius: BorderRadius.circular(100.0),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(12.0),
+                            padding: EdgeInsets.all(12.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -118,7 +121,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: const StayModalWidget(),
+                                              child: StayModalWidget(),
                                             ),
                                           );
                                         },
@@ -134,7 +137,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 8.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -160,7 +163,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                                 padding:
                                                     MediaQuery.viewInsetsOf(
                                                         context),
-                                                child: const StayModalWidget(),
+                                                child: StayModalWidget(),
                                               ),
                                             );
                                           },
@@ -174,11 +177,11 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                             children: [
                                               Expanded(
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           16.0, 0.0, 8.0, 0.0),
                                                   child: Text(
-                                                    'Where to ?',
+                                                    'Where tayo ga GALA?',
                                                     maxLines: 1,
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -195,7 +198,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -203,7 +206,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(16.0, 0.0,
                                                                 8.0, 0.0),
                                                     child: Text(
@@ -266,7 +269,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: const FiltersModalWidget(),
+                                              child: FiltersModalWidget(),
                                             ),
                                           );
                                         },
@@ -287,14 +290,14 @@ class _ExploreWidgetState extends State<ExploreWidget>
                       ),
                       Expanded(
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 78.0),
                           child: Stack(
                             children: [
                               Column(
                                 children: [
                                   Align(
-                                    alignment: const Alignment(0.0, 0),
+                                    alignment: Alignment(0.0, 0),
                                     child: TabBar(
                                       isScrollable: true,
                                       labelColor: FlutterFlowTheme.of(context)
@@ -309,13 +312,13 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                             letterSpacing: 0.0,
                                             useGoogleFonts: false,
                                           ),
-                                      unselectedLabelStyle: const TextStyle(),
+                                      unselectedLabelStyle: TextStyle(),
                                       indicatorColor:
                                           FlutterFlowTheme.of(context)
                                               .primaryText,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 4.0, 4.0, 4.0),
-                                      tabs: const [
+                                      tabs: [
                                         Tab(
                                           text: 'Trending',
                                           icon: Icon(
@@ -325,7 +328,7 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                           ),
                                         ),
                                         Tab(
-                                          text: 'Castles',
+                                          text: 'Staycation',
                                           icon: Icon(
                                             FFIcons.kbuildingCastle,
                                             size: 24.0,
@@ -339,14 +342,14 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                           ),
                                         ),
                                         Tab(
-                                          text: 'Mansions',
+                                          text: 'Hotels',
                                           icon: FaIcon(
                                             FontAwesomeIcons.hospitalAlt,
                                             size: 24.0,
                                           ),
                                         ),
                                         Tab(
-                                          text: 'Amazing pools',
+                                          text: 'Resorts',
                                           icon: Icon(
                                             FFIcons.kpool,
                                             size: 24.0,
@@ -371,51 +374,51 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
                                           child: wrapWithModel(
                                             model: _model.itemMapViewModel1,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ItemMapViewWidget(),
+                                            child: ItemMapViewWidget(),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
                                           child: wrapWithModel(
                                             model: _model.itemMapViewModel2,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ItemMapViewWidget(),
+                                            child: ItemMapViewWidget(),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
                                           child: wrapWithModel(
                                             model: _model.itemMapViewModel3,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ItemMapViewWidget(),
+                                            child: ItemMapViewWidget(),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
                                           child: wrapWithModel(
                                             model: _model.itemMapViewModel4,
                                             updateCallback: () =>
                                                 safeSetState(() {}),
-                                            child: const ItemMapViewWidget(),
+                                            child: ItemMapViewWidget(),
                                           ),
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   20.0, 0.0, 20.0, 0.0),
                                           child: SingleChildScrollView(
                                             child: Column(
@@ -427,9 +430,9 @@ class _ExploreWidgetState extends State<ExploreWidget>
                                                   updateCallback: () =>
                                                       safeSetState(() {}),
                                                   child:
-                                                      const CardDisplayItemWidget(),
+                                                      CardDisplayItemWidget(),
                                                 ),
-                                              ].divide(const SizedBox(height: 16.0)),
+                                              ].divide(SizedBox(height: 16.0)),
                                             ),
                                           ),
                                         ),
@@ -446,12 +449,12 @@ class _ExploreWidgetState extends State<ExploreWidget>
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 1.0),
+                  alignment: AlignmentDirectional(0.0, 1.0),
                   child: wrapWithModel(
                     model: _model.navBarModel,
                     updateCallback: () => safeSetState(() {}),
                     updateOnChange: true,
-                    child: const NavBarWidget(
+                    child: NavBarWidget(
                       activePageName: 'Explore',
                     ),
                   ),

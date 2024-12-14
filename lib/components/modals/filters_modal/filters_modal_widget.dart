@@ -3,6 +3,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'filters_modal_model.dart';
 export 'filters_modal_model.dart';
 
@@ -44,11 +46,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
+      padding: EdgeInsetsDirectional.fromSTEB(0.0, 48.0, 0.0, 0.0),
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: const BoxDecoration(),
+        decoration: BoxDecoration(),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.end,
@@ -61,13 +63,13 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                 Expanded(
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                     child: Container(
                       width: 150.0,
                       height: 20.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).neutral08,
-                        borderRadius: const BorderRadius.only(
+                        borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(14.0),
@@ -83,7 +85,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
               child: Container(
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  borderRadius: const BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(20.0),
@@ -95,7 +97,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                   children: [
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -143,7 +145,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 24.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -284,7 +286,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 10.0, 0.0),
                                         child: Container(
                                           width: 20.0,
@@ -385,11 +387,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -416,7 +418,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -477,7 +479,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -538,14 +540,14 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -576,7 +578,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             24.0, 0.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -612,7 +614,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                       ),
                                                     ],
                                                   ),
-                                                ].divide(const SizedBox(height: 4.0)),
+                                                ].divide(SizedBox(height: 4.0)),
                                               ),
                                             ),
                                           ],
@@ -626,7 +628,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               MainAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -636,11 +638,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: 'Any',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -656,7 +658,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                         useGoogleFonts: false,
                                                       ),
                                                   elevation: 3.0,
-                                                  borderSide: const BorderSide(
+                                                  borderSide: BorderSide(
                                                     color: Colors.transparent,
                                                     width: 1.0,
                                                   ),
@@ -667,7 +669,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -677,11 +679,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: '1',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -713,7 +715,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -723,11 +725,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: '2',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -759,7 +761,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -769,11 +771,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: '3',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -805,7 +807,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -815,11 +817,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: '4',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -851,7 +853,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 0.0, 0.0, 0.0),
                                               child: FFButtonWidget(
@@ -861,11 +863,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 text: '5',
                                                 options: FFButtonOptions(
                                                   height: 40.0,
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           24.0, 0.0, 24.0, 0.0),
                                                   iconPadding:
-                                                      const EdgeInsetsDirectional
+                                                      EdgeInsetsDirectional
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   color: FlutterFlowTheme.of(
@@ -899,14 +901,14 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ],
                                         ),
                                       ),
-                                    ].divide(const SizedBox(height: 16.0)),
+                                    ].divide(SizedBox(height: 16.0)),
                                   ),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -943,7 +945,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 4.0)),
+                                              ].divide(SizedBox(height: 4.0)),
                                             ),
                                           ),
                                         ],
@@ -958,7 +960,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -967,11 +969,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: 'Any',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -987,7 +989,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                           useGoogleFonts: false,
                                                         ),
                                                 elevation: 3.0,
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -998,7 +1000,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1007,11 +1009,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '1',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1042,7 +1044,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1051,11 +1053,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '2',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1086,7 +1088,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1095,11 +1097,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '3',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1130,7 +1132,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1139,11 +1141,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '4',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1174,7 +1176,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1183,11 +1185,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '5',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1219,13 +1221,13 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(height: 16.0)),
+                                  ].divide(SizedBox(height: 16.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           24.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1262,7 +1264,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                     ),
                                                   ],
                                                 ),
-                                              ].divide(const SizedBox(height: 4.0)),
+                                              ].divide(SizedBox(height: 4.0)),
                                             ),
                                           ),
                                         ],
@@ -1277,7 +1279,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1286,11 +1288,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: 'Any',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1306,7 +1308,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                           useGoogleFonts: false,
                                                         ),
                                                 elevation: 3.0,
-                                                borderSide: const BorderSide(
+                                                borderSide: BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -1317,7 +1319,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1326,11 +1328,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '1',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1361,7 +1363,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1370,11 +1372,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '2',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1405,7 +1407,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1414,11 +1416,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '3',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1449,7 +1451,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1458,11 +1460,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '4',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1493,7 +1495,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 0.0, 0.0),
                                             child: FFButtonWidget(
                                               onPressed: () {
@@ -1502,11 +1504,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                               text: '5',
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    const EdgeInsetsDirectional
+                                                    EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -1538,7 +1540,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ],
                                       ),
                                     ),
-                                  ].divide(const SizedBox(height: 16.0)),
+                                  ].divide(SizedBox(height: 16.0)),
                                 ),
                                 Divider(
                                   height: 0.0,
@@ -1546,13 +1548,13 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                   endIndent: 24.0,
                                   color: FlutterFlowTheme.of(context).neutral06,
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 0.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1574,7 +1576,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1609,7 +1611,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsets.all(16.0),
+                                                padding: EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1675,7 +1677,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: const EdgeInsets.all(16.0),
+                                                padding: EdgeInsets.all(16.0),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -1732,10 +1734,10 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(const SizedBox(height: 16.0)),
+                              ].divide(SizedBox(height: 16.0)),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -1763,7 +1765,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -1811,7 +1813,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -1878,7 +1880,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 0.0, 0.0),
                                           child: FlutterFlowIconButton(
                                             borderRadius: 10.0,
@@ -1903,11 +1905,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -1938,7 +1940,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           false,
                                       onChanged: (newValue) async {
                                         safeSetState(() => _model
-                                            .switchListTileValue1 = newValue);
+                                            .switchListTileValue1 = newValue!);
                                       },
                                       title: Text(
                                         'Instant Book',
@@ -1971,7 +1973,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                       dense: false,
                                       controlAffinity:
                                           ListTileControlAffinity.trailing,
-                                      contentPadding: const EdgeInsets.all(0.0),
+                                      contentPadding: EdgeInsets.all(0.0),
                                     ),
                                   ),
                                   Material(
@@ -1981,7 +1983,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           false,
                                       onChanged: (newValue) async {
                                         safeSetState(() => _model
-                                            .switchListTileValue2 = newValue);
+                                            .switchListTileValue2 = newValue!);
                                       },
                                       title: Text(
                                         'Self check-in',
@@ -2014,18 +2016,18 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                       dense: false,
                                       controlAffinity:
                                           ListTileControlAffinity.trailing,
-                                      contentPadding: const EdgeInsets.all(0.0),
+                                      contentPadding: EdgeInsets.all(0.0),
                                     ),
                                   ),
                                   Divider(
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2053,7 +2055,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2101,7 +2103,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2149,7 +2151,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2216,7 +2218,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 0.0, 0.0),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
@@ -2242,11 +2244,11 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2277,7 +2279,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                           false,
                                       onChanged: (newValue) async {
                                         safeSetState(() => _model
-                                            .switchListTileValue3 = newValue);
+                                            .switchListTileValue3 = newValue!);
                                       },
                                       title: Text(
                                         'Superhost',
@@ -2312,18 +2314,18 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                       dense: false,
                                       controlAffinity:
                                           ListTileControlAffinity.trailing,
-                                      contentPadding: const EdgeInsets.all(0.0),
+                                      contentPadding: EdgeInsets.all(0.0),
                                     ),
                                   ),
                                   Divider(
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -2351,7 +2353,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2399,7 +2401,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2447,7 +2449,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color: Colors.transparent,
                                     child: Theme(
                                       data: ThemeData(
-                                        checkboxTheme: const CheckboxThemeData(
+                                        checkboxTheme: CheckboxThemeData(
                                           visualDensity: VisualDensity.compact,
                                           materialTapTargetSize:
                                               MaterialTapTargetSize.shrinkWrap,
@@ -2514,7 +2516,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 0.0, 0.0),
                                           child: FlutterFlowIconButton(
                                             borderColor: Colors.transparent,
@@ -2540,16 +2542,16 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     color:
                                         FlutterFlowTheme.of(context).neutral06,
                                   ),
-                                ].divide(const SizedBox(height: 16.0)),
+                                ].divide(SizedBox(height: 16.0)),
                               ),
                             ),
-                          ].divide(const SizedBox(height: 24.0)),
+                          ].divide(SizedBox(height: 24.0)),
                         ),
                       ),
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -2586,9 +2588,9 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                             text: 'Show 642 homes',
                             options: FFButtonOptions(
                               height: 40.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).primaryText,
                               textStyle: FlutterFlowTheme.of(context)
@@ -2600,7 +2602,7 @@ class _FiltersModalWidgetState extends State<FiltersModalWidget> {
                                     useGoogleFonts: false,
                                   ),
                               elevation: 3.0,
-                              borderSide: const BorderSide(
+                              borderSide: BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

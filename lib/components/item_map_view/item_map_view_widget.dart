@@ -2,6 +2,8 @@ import '/components/card_display_item/card_display_item_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'item_map_view_model.dart';
 export 'item_map_view_model.dart';
 
@@ -36,7 +38,7 @@ class _ItemMapViewWidgetState extends State<ItemMapViewWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
       width: double.infinity,
       height: double.infinity,
       child: Stack(
@@ -45,36 +47,36 @@ class _ItemMapViewWidgetState extends State<ItemMapViewWidget> {
             Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: ListView(
                 padding: EdgeInsets.zero,
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                     child: wrapWithModel(
                       model: _model.cardDisplayItemModel1,
                       updateCallback: () => safeSetState(() {}),
-                      child: const CardDisplayItemWidget(),
+                      child: CardDisplayItemWidget(),
                     ),
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                     child: wrapWithModel(
                       model: _model.cardDisplayItemModel2,
                       updateCallback: () => safeSetState(() {}),
-                      child: const CardDisplayItemWidget(),
+                      child: CardDisplayItemWidget(),
                     ),
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                     child: wrapWithModel(
                       model: _model.cardDisplayItemModel3,
                       updateCallback: () => safeSetState(() {}),
-                      child: const CardDisplayItemWidget(),
+                      child: CardDisplayItemWidget(),
                     ),
                   ),
                 ],
@@ -84,7 +86,7 @@ class _ItemMapViewWidgetState extends State<ItemMapViewWidget> {
             Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: const BoxDecoration(),
+              decoration: BoxDecoration(),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
                 child: Image.asset(
@@ -96,9 +98,9 @@ class _ItemMapViewWidgetState extends State<ItemMapViewWidget> {
               ),
             ),
           Align(
-            alignment: const AlignmentDirectional(0.0, 1.0),
+            alignment: AlignmentDirectional(0.0, 1.0),
             child: Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -121,15 +123,15 @@ class _ItemMapViewWidgetState extends State<ItemMapViewWidget> {
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                        EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 12.0, 0.0),
                           child: Stack(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             children: [
                               if (!_model.mapView)
                                 Icon(

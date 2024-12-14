@@ -5,6 +5,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'stay_modal_model.dart';
 export 'stay_modal_model.dart';
 
@@ -58,10 +60,10 @@ class _StayModalWidgetState extends State<StayModalWidget>
         child: Container(
           width: double.infinity,
           height: double.infinity,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             color: Color(0xCCFFFFFF),
           ),
-          child: SizedBox(
+          child: Container(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -69,7 +71,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                 Column(
                   children: [
                     Align(
-                      alignment: const Alignment(0.0, 0),
+                      alignment: Alignment(0.0, 0),
                       child: TabBar(
                         labelColor: FlutterFlowTheme.of(context).primaryText,
                         unselectedLabelColor:
@@ -80,12 +82,12 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                   letterSpacing: 0.0,
                                   useGoogleFonts: false,
                                 ),
-                        unselectedLabelStyle: const TextStyle(),
+                        unselectedLabelStyle: TextStyle(),
                         indicatorColor:
                             FlutterFlowTheme.of(context).primaryText,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             60.0, 24.0, 60.0, 24.0),
-                        tabs: const [
+                        tabs: [
                           Tab(
                             text: 'Stays',
                           ),
@@ -113,7 +115,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         decoration: BoxDecoration(
@@ -124,7 +126,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 16.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -134,7 +136,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                 CrossAxisAlignment.stretch,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Row(
@@ -176,7 +178,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 0.0, 16.0, 0.0),
                                                 child: Row(
@@ -388,7 +390,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                             ),
                                                           ],
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                     Column(
@@ -456,7 +458,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                             ),
                                                           ],
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                     Column(
@@ -524,7 +526,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                             ),
                                                           ],
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                     Column(
@@ -592,17 +594,17 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                                             ),
                                                           ],
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 8.0)),
                                                     ),
                                                   ]
                                                       .divide(
-                                                          const SizedBox(width: 8.0))
-                                                      .addToStart(const SizedBox(
+                                                          SizedBox(width: 8.0))
+                                                      .addToStart(SizedBox(
                                                           width: 16.0)),
                                                 ),
                                               ),
-                                            ].divide(const SizedBox(height: 16.0)),
+                                            ].divide(SizedBox(height: 16.0)),
                                           ),
                                         ),
                                       ),
@@ -611,7 +613,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                 ],
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -619,7 +621,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           decoration: BoxDecoration(
@@ -630,7 +632,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 8.0, 16.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -691,7 +693,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -699,7 +701,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           decoration: BoxDecoration(
@@ -710,7 +712,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                           ),
                                           child: Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 8.0, 16.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -770,7 +772,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                   ],
                                 ),
                               ),
-                              const Spacer(),
+                              Spacer(),
                             ],
                           ),
                           Column(
@@ -781,12 +783,12 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                 child: wrapWithModel(
                                   model: _model.guestsModalModel,
                                   updateCallback: () => safeSetState(() {}),
-                                  child: const GuestsModalWidget(),
+                                  child: GuestsModalWidget(),
                                 ),
                               ),
                             ]
-                                .divide(const SizedBox(height: 16.0))
-                                .addToStart(const SizedBox(height: 24.0)),
+                                .divide(SizedBox(height: 16.0))
+                                .addToStart(SizedBox(height: 24.0)),
                           ),
                         ],
                       ),
@@ -800,16 +802,16 @@ class _StayModalWidgetState extends State<StayModalWidget>
                   children: [
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 24.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Expanded(
                             child: Container(
                               height: 60.0,
-                              decoration: const BoxDecoration(),
+                              decoration: BoxDecoration(),
                               child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                padding: EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -833,16 +835,16 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                         print('Button pressed ...');
                                       },
                                       text: 'Search',
-                                      icon: const Icon(
+                                      icon: Icon(
                                         FFIcons.ksearch,
                                         size: 16.0,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             24.0, 0.0, 24.0, 0.0),
                                         iconPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
+                                            EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .accent2,
@@ -854,7 +856,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                                               letterSpacing: 0.0,
                                               useGoogleFonts: false,
                                             ),
-                                        borderSide: const BorderSide(
+                                        borderSide: BorderSide(
                                           color: Colors.transparent,
                                         ),
                                         borderRadius:
@@ -873,7 +875,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -897,7 +899,7 @@ class _StayModalWidgetState extends State<StayModalWidget>
                       Container(
                         width: 40.0,
                         height: 40.0,
-                        decoration: const BoxDecoration(),
+                        decoration: BoxDecoration(),
                       ),
                     ],
                   ),

@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'no_trip_booked_modal_model.dart';
 export 'no_trip_booked_modal_model.dart';
 
@@ -47,7 +49,7 @@ class _NoTripBookedModalWidgetState extends State<NoTripBookedModalWidget> {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(16.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -96,8 +98,8 @@ class _NoTripBookedModalWidgetState extends State<NoTripBookedModalWidget> {
                   ),
                 ),
               ]
-                  .addToStart(const SizedBox(width: 40.0))
-                  .addToEnd(const SizedBox(width: 40.0)),
+                  .addToStart(SizedBox(width: 40.0))
+                  .addToEnd(SizedBox(width: 40.0)),
             ),
             FFButtonWidget(
               onPressed: () {
@@ -107,8 +109,8 @@ class _NoTripBookedModalWidgetState extends State<NoTripBookedModalWidget> {
               options: FFButtonOptions(
                 width: double.infinity,
                 height: 40.0,
-                padding: const EdgeInsets.all(0.0),
-                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                padding: EdgeInsets.all(0.0),
+                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 color: FlutterFlowTheme.of(context).accent2,
                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                       fontFamily: 'SFPRO',
@@ -116,13 +118,13 @@ class _NoTripBookedModalWidgetState extends State<NoTripBookedModalWidget> {
                       letterSpacing: 0.0,
                       useGoogleFonts: false,
                     ),
-                borderSide: const BorderSide(
+                borderSide: BorderSide(
                   color: Colors.transparent,
                 ),
                 borderRadius: BorderRadius.circular(8.0),
               ),
             ),
-          ].divide(const SizedBox(height: 16.0)).addToStart(const SizedBox(height: 20.0)),
+          ].divide(SizedBox(height: 16.0)).addToStart(SizedBox(height: 20.0)),
         ),
       ),
     );

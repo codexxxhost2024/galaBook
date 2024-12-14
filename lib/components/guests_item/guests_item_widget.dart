@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_count_controller.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'guests_item_model.dart';
 export 'guests_item_model.dart';
 
@@ -60,7 +62,7 @@ class _GuestsItemWidgetState extends State<GuestsItemWidget> {
                   children: [
                     Expanded(
                       child: Text(
-                        widget.title!,
+                        widget!.title!,
                         maxLines: 1,
                         style: FlutterFlowTheme.of(context).titleSmall.override(
                               fontFamily: 'SFPRO',
@@ -76,7 +78,7 @@ class _GuestsItemWidgetState extends State<GuestsItemWidget> {
                   children: [
                     Expanded(
                       child: Text(
-                        widget.description!,
+                        widget!.description!,
                         maxLines: 1,
                         style: FlutterFlowTheme.of(context).bodyLarge.override(
                               fontFamily: 'SFPRO',
@@ -88,7 +90,7 @@ class _GuestsItemWidgetState extends State<GuestsItemWidget> {
                     ),
                   ],
                 ),
-              ].divide(const SizedBox(height: 4.0)),
+              ].divide(SizedBox(height: 4.0)),
             ),
           ),
           Container(

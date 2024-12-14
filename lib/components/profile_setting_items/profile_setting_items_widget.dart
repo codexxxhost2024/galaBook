@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'profile_setting_items_model.dart';
 export 'profile_setting_items_model.dart';
 
@@ -11,7 +13,7 @@ class ProfileSettingItemsWidget extends StatefulWidget {
     this.icon,
     this.title,
     bool? activeDivider,
-  }) : activeDivider = activeDivider ?? true;
+  }) : this.activeDivider = activeDivider ?? true;
 
   final Widget? icon;
   final String? title;
@@ -62,13 +64,13 @@ class _ProfileSettingItemsWidgetState extends State<ProfileSettingItemsWidget> {
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    widget.icon!,
+                    widget!.icon!,
                     Expanded(
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                         child: Text(
-                          widget.title!,
+                          widget!.title!,
                           maxLines: 1,
                           style: FlutterFlowTheme.of(context)
                               .titleSmall
@@ -99,7 +101,7 @@ class _ProfileSettingItemsWidgetState extends State<ProfileSettingItemsWidget> {
               ),
             ],
           ),
-          if (!widget.activeDivider)
+          if (!widget!.activeDivider)
             Divider(
               height: 1.0,
               color: FlutterFlowTheme.of(context).neutral06,

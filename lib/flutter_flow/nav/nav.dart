@@ -1,11 +1,19 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
+import '/backend/sqlite/sqlite_manager.dart';
 
 import '/index.dart';
+import '/main.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -40,7 +48,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 ),
               ),
             )
-          : const ExploreWidget(),
+          : ExploreWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -55,27 +63,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                     ),
                   ),
                 )
-              : const ExploreWidget(),
+              : ExploreWidget(),
         ),
         FFRoute(
           name: 'Explore',
           path: '/explore',
-          builder: (context, params) => const ExploreWidget(),
+          builder: (context, params) => ExploreWidget(),
         ),
         FFRoute(
           name: 'Profile',
           path: '/profile',
-          builder: (context, params) => const ProfileWidget(),
+          builder: (context, params) => ProfileWidget(),
         ),
         FFRoute(
           name: 'TripsLoged',
           path: '/tripsLoged',
-          builder: (context, params) => const TripsLogedWidget(),
+          builder: (context, params) => TripsLogedWidget(),
         ),
         FFRoute(
           name: 'ReviewFive',
           path: '/reviewFive',
-          builder: (context, params) => const ReviewFiveWidget(),
+          builder: (context, params) => ReviewFiveWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -240,7 +248,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(
+  static TransitionInfo appDefault() => TransitionInfo(
         hasTransition: true,
         transitionType: PageTransitionType.fade,
         duration: Duration(milliseconds: 250),

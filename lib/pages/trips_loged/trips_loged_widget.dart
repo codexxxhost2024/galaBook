@@ -4,8 +4,12 @@ import '/flutter_flow/flutter_flow_media_display.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_video_player.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'trips_loged_model.dart';
 export 'trips_loged_model.dart';
 
@@ -46,7 +50,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: SafeArea(
           top: true,
-          child: SizedBox(
+          child: Container(
             width: double.infinity,
             height: double.infinity,
             child: Stack(
@@ -59,7 +63,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                   ),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 78.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 78.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -71,7 +75,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                 children: [
                                   Expanded(
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 24.0, 0.0, 24.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -80,14 +84,29 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 24.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
+                                                ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  child: Image.network(
+                                                    'https://picsum.photos/seed/726/600',
+                                                    width: 127.0,
+                                                    height: 35.0,
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
                                                 Expanded(
                                                   child: Text(
                                                     'Trips',
+                                                    textAlign: TextAlign.end,
                                                     maxLines: 1,
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -109,7 +128,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: Row(
@@ -138,7 +157,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: InkWell(
@@ -161,7 +180,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: const [
+                                                          boxShadow: [
                                                             BoxShadow(
                                                               blurRadius: 20.0,
                                                               color: Color(
@@ -174,7 +193,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                             )
                                                           ],
                                                           borderRadius:
-                                                              const BorderRadius.only(
+                                                              BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     12.0),
@@ -191,7 +210,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -245,7 +264,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                               ),
                                                               ClipRRect(
                                                                 borderRadius:
-                                                                    const BorderRadius
+                                                                    BorderRadius
                                                                         .only(
                                                                   bottomLeft: Radius
                                                                       .circular(
@@ -271,7 +290,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                             context)
                                                                         .secondaryBackground,
                                                                     borderRadius:
-                                                                        const BorderRadius
+                                                                        BorderRadius
                                                                             .only(
                                                                       bottomLeft:
                                                                           Radius.circular(
@@ -291,7 +310,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    const EdgeInsets
+                                                                    EdgeInsets
                                                                         .all(
                                                                             16.0),
                                                                 child: Column(
@@ -342,7 +361,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                         ),
                                                                       ],
                                                                     ),
-                                                                  ].divide(const SizedBox(
+                                                                  ].divide(SizedBox(
                                                                       height:
                                                                           8.0)),
                                                                 ),
@@ -356,7 +375,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                     .neutral06,
                                                               ),
                                                               Padding(
-                                                                padding: const EdgeInsetsDirectional
+                                                                padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         0.0,
@@ -417,7 +436,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                                           useGoogleFonts: false,
                                                                                         ),
                                                                                   ),
-                                                                                  const TextSpan(
+                                                                                  TextSpan(
                                                                                     text: ' ',
                                                                                     style: TextStyle(),
                                                                                   ),
@@ -454,7 +473,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -466,7 +485,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              const EdgeInsetsDirectional
+                                                              EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       0.0,
@@ -508,7 +527,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                     .spaceBetween,
                                                             children: [
                                                               Padding(
-                                                                padding: const EdgeInsetsDirectional
+                                                                padding: EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         24.0,
                                                                         0.0,
@@ -535,7 +554,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           0.0,
@@ -575,7 +594,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                               ),
                                                                             ],
                                                                           ),
-                                                                        ].divide(const SizedBox(height: 8.0)),
+                                                                        ].divide(SizedBox(height: 8.0)),
                                                                       ),
                                                                     ),
                                                                   ],
@@ -583,7 +602,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -610,7 +629,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           0.0,
@@ -650,7 +669,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                               ),
                                                                             ],
                                                                           ),
-                                                                        ].divide(const SizedBox(height: 8.0)),
+                                                                        ].divide(SizedBox(height: 8.0)),
                                                                       ),
                                                                     ),
                                                                   ],
@@ -677,7 +696,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: const EdgeInsetsDirectional
+                                                                    padding: EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8.0,
                                                                             0.0,
@@ -719,7 +738,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                             ),
                                                                           ],
                                                                         ),
-                                                                      ].divide(const SizedBox(
+                                                                      ].divide(SizedBox(
                                                                               height: 8.0)),
                                                                     ),
                                                                   ),
@@ -736,13 +755,13 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                   .of(context)
                                                               .neutral06,
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 16.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: Container(
@@ -783,7 +802,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                             false,
                                                                       ),
                                                                 ),
-                                                                const TextSpan(
+                                                                TextSpan(
                                                                   text: ' ',
                                                                   style:
                                                                       TextStyle(),
@@ -828,7 +847,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: Column(
@@ -859,7 +878,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                             Expanded(
                                                               child: Padding(
                                                                 padding:
-                                                                    const EdgeInsetsDirectional
+                                                                    EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             8.0,
                                                                             0.0,
@@ -908,7 +927,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                                       useGoogleFonts: false,
                                                                                     ),
                                                                               ),
-                                                                              const TextSpan(
+                                                                              TextSpan(
                                                                                 text: ' . ',
                                                                                 style: TextStyle(),
                                                                               ),
@@ -931,7 +950,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                         ),
                                                                       ],
                                                                     ),
-                                                                  ].divide(const SizedBox(
+                                                                  ].divide(SizedBox(
                                                                       height:
                                                                           8.0)),
                                                                 ),
@@ -984,13 +1003,13 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                   .of(context)
                                                               .neutral06,
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 16.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: Column(
@@ -1050,7 +1069,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                   Expanded(
                                                                     child:
                                                                         Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           0.0,
@@ -1116,7 +1135,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                               ),
                                                                             ],
                                                                           ),
-                                                                        ].divide(const SizedBox(height: 8.0)),
+                                                                        ].divide(SizedBox(height: 8.0)),
                                                                       ),
                                                                     ),
                                                                   ),
@@ -1131,13 +1150,13 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                   .of(context)
                                                               .neutral06,
                                                         ),
-                                                      ].divide(const SizedBox(
+                                                      ].divide(SizedBox(
                                                           height: 16.0)),
                                                     ),
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: Container(
@@ -1178,7 +1197,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                                             false,
                                                                       ),
                                                                 ),
-                                                                const TextSpan(
+                                                                TextSpan(
                                                                   text: ' ',
                                                                   style:
                                                                       TextStyle(),
@@ -1223,7 +1242,7 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
+                                                        EdgeInsetsDirectional
                                                             .fromSTEB(24.0, 0.0,
                                                                 24.0, 0.0),
                                                     child: wrapWithModel(
@@ -1232,17 +1251,17 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                                                       updateCallback: () =>
                                                           safeSetState(() {}),
                                                       child:
-                                                          const NoTripBookedModalWidget(),
+                                                          NoTripBookedModalWidget(),
                                                     ),
                                                   ),
                                                 ].divide(
-                                                    const SizedBox(height: 16.0)),
+                                                    SizedBox(height: 16.0)),
                                               ),
                                             ),
                                           ),
                                         ]
-                                            .divide(const SizedBox(height: 40.0))
-                                            .addToStart(const SizedBox(height: 50.0)),
+                                            .divide(SizedBox(height: 40.0))
+                                            .addToStart(SizedBox(height: 50.0)),
                                       ),
                                     ),
                                   ),
@@ -1256,12 +1275,12 @@ class _TripsLogedWidgetState extends State<TripsLogedWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 1.0),
+                  alignment: AlignmentDirectional(0.0, 1.0),
                   child: wrapWithModel(
                     model: _model.navBarModel,
                     updateCallback: () => safeSetState(() {}),
                     updateOnChange: true,
-                    child: const NavBarWidget(
+                    child: NavBarWidget(
                       activePageName: 'Trips',
                     ),
                   ),

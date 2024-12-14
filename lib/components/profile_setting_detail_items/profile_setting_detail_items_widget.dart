@@ -2,6 +2,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'profile_setting_detail_items_model.dart';
 export 'profile_setting_detail_items_model.dart';
 
@@ -64,11 +66,11 @@ class _ProfileSettingDetailItemsWidgetState
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    widget.icon!,
+                    widget!.icon!,
                     Expanded(
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -77,7 +79,7 @@ class _ProfileSettingDetailItemsWidgetState
                               children: [
                                 Expanded(
                                   child: Text(
-                                    widget.title!,
+                                    widget!.title!,
                                     maxLines: 1,
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -97,7 +99,7 @@ class _ProfileSettingDetailItemsWidgetState
                               children: [
                                 Expanded(
                                   child: Text(
-                                    widget.detail!,
+                                    widget!.detail!,
                                     maxLines: 2,
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
@@ -112,7 +114,7 @@ class _ProfileSettingDetailItemsWidgetState
                                 ),
                               ],
                             ),
-                          ].divide(const SizedBox(height: 4.0)),
+                          ].divide(SizedBox(height: 4.0)),
                         ),
                       ),
                     ),
