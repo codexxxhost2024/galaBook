@@ -12,3 +12,4 @@ export '/auth_flow/auth_3_verify_phone/auth3_verify_phone_widget.dart'
     show Auth3VerifyPhoneWidget;
 export '/auth_flow/auth_3_forgot_password/auth3_forgot_password_widget.dart'
     show Auth3ForgotPasswordWidget;
+export '/add_listing/add_listing_widget.dart' show AddListingWidget;
