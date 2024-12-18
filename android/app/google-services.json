@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "753390051378",
+    "firebase_url": "https://apartment-rental-free-p-4x20iq-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "apartment-rental-free-p-4x20iq",
+    "storage_bucket": "apartment-rental-free-p-4x20iq.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753390051378:android:eb4371977cbf1d041c9c2b",
+        "android_client_info": {
+          "package_name": "com.galatravel.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753390051378-j36qb6m029l2qmpj7h4vkhpqnv83pb1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.galatravel.app",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "753390051378-cdd2pmk1tntc9rj6uifv0rsnbh65cmna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJnfSsfCHiDqrNGNiWSaUxdVmZF_6ZV1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753390051378-cdd2pmk1tntc9rj6uifv0rsnbh65cmna.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "753390051378-j0turl0u8636vdg84u0cavu1clevho8e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.galatravel.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

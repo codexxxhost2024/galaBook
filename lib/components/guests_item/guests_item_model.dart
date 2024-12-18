@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_count_controller.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'dart:ui';
 import 'guests_item_widget.dart' show GuestsItemWidget;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

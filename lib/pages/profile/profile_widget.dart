@@ -1,4 +1,4 @@
-import '/components/logo/logo_widget.dart';
+import '/components/logo_widget.dart';
 import '/components/modals/taxes_modal/taxes_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
 import '/components/profile_setting_detail_items/profile_setting_detail_items_widget.dart';
@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -86,11 +87,13 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
-                                            wrapWithModel(
-                                              model: _model.logoModel,
-                                              updateCallback: () =>
-                                                  safeSetState(() {}),
-                                              child: LogoWidget(),
+                                            Expanded(
+                                              child: wrapWithModel(
+                                                model: _model.logoModel,
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: LogoWidget(),
+                                              ),
                                             ),
                                             Expanded(
                                               child: Text(
