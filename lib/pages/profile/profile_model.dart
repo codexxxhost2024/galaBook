@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/components/logo_widget.dart';
 import '/components/modals/taxes_modal/taxes_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';

@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/components/logo_widget.dart';
 import '/components/modals/taxes_modal/taxes_modal_widget.dart';
 import '/components/nav_bar/nav_bar_widget.dart';
@@ -135,17 +136,23 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.end,
                                                 children: [
-                                                  Container(
-                                                    width: 50.0,
-                                                    height: 50.0,
-                                                    clipBehavior:
-                                                        Clip.antiAlias,
-                                                    decoration: BoxDecoration(
-                                                      shape: BoxShape.circle,
-                                                    ),
-                                                    child: Image.network(
-                                                      'https://picsum.photos/seed/495/600',
-                                                      fit: BoxFit.contain,
+                                                  AuthUserStreamWidget(
+                                                    builder: (context) =>
+                                                        Container(
+                                                      width: 50.0,
+                                                      height: 50.0,
+                                                      clipBehavior:
+                                                          Clip.antiAlias,
+                                                      decoration: BoxDecoration(
+                                                        shape: BoxShape.circle,
+                                                      ),
+                                                      child: Image.network(
+                                                        valueOrDefault<String>(
+                                                          currentUserPhoto,
+                                                          'https://cdn-icons-png.flaticon.com/512/6596/6596121.png',
+                                                        ),
+                                                        fit: BoxFit.contain,
+                                                      ),
                                                     ),
                                                   ),
                                                   Expanded(
@@ -168,7 +175,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                             children: [
                                                               Expanded(
                                                                 child: Text(
-                                                                  'Lawrence',
+                                                                  currentUserEmail,
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .titleMedium
@@ -542,7 +549,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 safeSetState(() {}),
                                             child: ProfileSettingItemsWidget(
                                               icon: Icon(
-                                                FFIcons.kship,
+                                                Icons.hotel,
                                               ),
                                               title: 'Host and experience',
                                               activeDivider: false,
@@ -822,23 +829,43 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 8.0, 8.0, 8.0),
-                                                child: Text(
-                                                  'Log out',
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .headlineLarge
-                                                      .override(
-                                                        fontFamily: 'SFPRO',
-                                                        color:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .secondaryText,
-                                                        letterSpacing: 0.0,
-                                                        decoration:
-                                                            TextDecoration
-                                                                .underline,
-                                                        useGoogleFonts: false,
-                                                      ),
+                                                child: InkWell(
+                                                  splashColor:
+                                                      Colors.transparent,
+                                                  focusColor:
+                                                      Colors.transparent,
+                                                  hoverColor:
+                                                      Colors.transparent,
+                                                  highlightColor:
+                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    GoRouter.of(context)
+                                                        .prepareAuthEvent();
+                                                    await authManager.signOut();
+                                                    GoRouter.of(context)
+                                                        .clearRedirectLocation();
+
+                                                    context.pushNamedAuth(
+                                                        'auth_3_Login',
+                                                        context.mounted);
+                                                  },
+                                                  child: Text(
+                                                    'Log out',
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .headlineLarge
+                                                        .override(
+                                                          fontFamily: 'SFPRO',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          letterSpacing: 0.0,
+                                                          decoration:
+                                                              TextDecoration
+                                                                  .underline,
+                                                          useGoogleFonts: false,
+                                                        ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
