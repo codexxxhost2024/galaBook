@@ -7,5 +7,38 @@ service cloud.firestore {
       allow write: if request.auth.uid == document;
       allow delete: if request.auth.uid == document;
     }
+
+    match /listing/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /listing/{parent}/room/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /{path=**}/room/{document} {
+      allow read: if true;
+    }
+
+
+    match /booking/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /booking_payment/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
   }
 }
